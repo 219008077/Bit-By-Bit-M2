@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project.Customer;
 
 namespace Project
 {
@@ -73,6 +74,12 @@ namespace Project
         private void emailFiels_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var cust = new CustomerForm();
+            cust.Show();
         }
     }
 }

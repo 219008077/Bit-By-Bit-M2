@@ -43,6 +43,7 @@
             this.adminTableAdapter = new Project.GroupPmb8DataSetTableAdapters.AdminTableAdapter();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customerTableAdapter = new Project.GroupPmb8DataSetTableAdapters.CustomerTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.groupPmb8DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
@@ -69,7 +70,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(277, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 16);
+            this.label1.Size = new System.Drawing.Size(93, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Admin Email";
             // 
@@ -79,7 +80,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(277, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 16);
+            this.label2.Size = new System.Drawing.Size(122, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Admin Password";
             // 
@@ -145,6 +146,16 @@
             // 
             this.customerTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(743, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 30);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Open Customer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +163,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(907, 495);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.label3);
@@ -187,6 +199,7 @@
         private GroupPmb8DataSetTableAdapters.AdminTableAdapter adminTableAdapter;
         private System.Windows.Forms.BindingSource customerBindingSource;
         private GroupPmb8DataSetTableAdapters.CustomerTableAdapter customerTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }
 

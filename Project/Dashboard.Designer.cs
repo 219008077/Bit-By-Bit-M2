@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.paymentsTab = new System.Windows.Forms.TabPage();
+            this.backItems = new System.Windows.Forms.Button();
             this.receiptBtn = new System.Windows.Forms.Button();
             this.addDiscountBtn = new System.Windows.Forms.Button();
             this.amountDueTextBox = new System.Windows.Forms.TextBox();
@@ -61,6 +62,8 @@
             this.payButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.ItemsTab = new System.Windows.Forms.TabPage();
+            this.viewCustomers = new System.Windows.Forms.Button();
+            this.viewPayments = new System.Windows.Forms.Button();
             this.itemsDataGrid = new System.Windows.Forms.DataGridView();
             this.itemIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,6 +112,7 @@
             this.ItemName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.CustomersTab = new System.Windows.Forms.TabPage();
+            this.viewItems = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.searchCustomer = new System.Windows.Forms.TextBox();
             this.Deletebtn = new System.Windows.Forms.Button();
@@ -145,10 +149,6 @@
             this.paymentTableAdapter = new Project.GroupPmb8DataSetTableAdapters.PaymentTableAdapter();
             this.itemServicesTableAdapter = new Project.GroupPmb8DataSetTableAdapters.ItemServicesTableAdapter();
             this.itemsTableAdapter = new Project.GroupPmb8DataSetTableAdapters.ItemsTableAdapter();
-            this.viewItems = new System.Windows.Forms.Button();
-            this.viewPayments = new System.Windows.Forms.Button();
-            this.viewCustomers = new System.Windows.Forms.Button();
-            this.backItems = new System.Windows.Forms.Button();
             this.paymentsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.payTicketDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ticketBindingSource)).BeginInit();
@@ -197,6 +197,17 @@
             this.paymentsTab.Text = "Payments";
             this.paymentsTab.UseVisualStyleBackColor = true;
             this.paymentsTab.Click += new System.EventHandler(this.paymentsTab_Click);
+            // 
+            // backItems
+            // 
+            this.backItems.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.backItems.Location = new System.Drawing.Point(853, 562);
+            this.backItems.Name = "backItems";
+            this.backItems.Size = new System.Drawing.Size(143, 35);
+            this.backItems.TabIndex = 51;
+            this.backItems.Text = "Back (Items)";
+            this.backItems.UseVisualStyleBackColor = true;
+            this.backItems.Click += new System.EventHandler(this.backItems_Click);
             // 
             // receiptBtn
             // 
@@ -513,6 +524,28 @@
             this.ItemsTab.Text = "Items";
             this.ItemsTab.UseVisualStyleBackColor = true;
             this.ItemsTab.Click += new System.EventHandler(this.ItemsTab_Click);
+            // 
+            // viewCustomers
+            // 
+            this.viewCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.viewCustomers.Location = new System.Drawing.Point(762, 565);
+            this.viewCustomers.Name = "viewCustomers";
+            this.viewCustomers.Size = new System.Drawing.Size(143, 35);
+            this.viewCustomers.TabIndex = 50;
+            this.viewCustomers.Text = "Back (Customers)";
+            this.viewCustomers.UseVisualStyleBackColor = true;
+            this.viewCustomers.Click += new System.EventHandler(this.viewCustomers_Click);
+            // 
+            // viewPayments
+            // 
+            this.viewPayments.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.viewPayments.Location = new System.Drawing.Point(914, 565);
+            this.viewPayments.Name = "viewPayments";
+            this.viewPayments.Size = new System.Drawing.Size(143, 35);
+            this.viewPayments.TabIndex = 49;
+            this.viewPayments.Text = "Next (Payments)";
+            this.viewPayments.UseVisualStyleBackColor = true;
+            this.viewPayments.Click += new System.EventHandler(this.viewPayments_Click);
             // 
             // itemsDataGrid
             // 
@@ -1012,6 +1045,17 @@
             this.CustomersTab.TabIndex = 0;
             this.CustomersTab.Text = "Customers";
             // 
+            // viewItems
+            // 
+            this.viewItems.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.viewItems.Location = new System.Drawing.Point(851, 550);
+            this.viewItems.Name = "viewItems";
+            this.viewItems.Size = new System.Drawing.Size(143, 35);
+            this.viewItems.TabIndex = 25;
+            this.viewItems.Text = "Next (Items)";
+            this.viewItems.UseVisualStyleBackColor = true;
+            this.viewItems.Click += new System.EventHandler(this.viewItems_Click);
+            // 
             // label25
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1314,50 +1358,6 @@
             // itemsTableAdapter
             // 
             this.itemsTableAdapter.ClearBeforeFill = true;
-            // 
-            // viewItems
-            // 
-            this.viewItems.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.viewItems.Location = new System.Drawing.Point(851, 550);
-            this.viewItems.Name = "viewItems";
-            this.viewItems.Size = new System.Drawing.Size(143, 35);
-            this.viewItems.TabIndex = 25;
-            this.viewItems.Text = "Next (Items)";
-            this.viewItems.UseVisualStyleBackColor = true;
-            this.viewItems.Click += new System.EventHandler(this.viewItems_Click);
-            // 
-            // viewPayments
-            // 
-            this.viewPayments.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.viewPayments.Location = new System.Drawing.Point(914, 565);
-            this.viewPayments.Name = "viewPayments";
-            this.viewPayments.Size = new System.Drawing.Size(143, 35);
-            this.viewPayments.TabIndex = 49;
-            this.viewPayments.Text = "Next (Payments)";
-            this.viewPayments.UseVisualStyleBackColor = true;
-            this.viewPayments.Click += new System.EventHandler(this.viewPayments_Click);
-            // 
-            // viewCustomers
-            // 
-            this.viewCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.viewCustomers.Location = new System.Drawing.Point(762, 565);
-            this.viewCustomers.Name = "viewCustomers";
-            this.viewCustomers.Size = new System.Drawing.Size(143, 35);
-            this.viewCustomers.TabIndex = 50;
-            this.viewCustomers.Text = "Back (Customers)";
-            this.viewCustomers.UseVisualStyleBackColor = true;
-            this.viewCustomers.Click += new System.EventHandler(this.viewCustomers_Click);
-            // 
-            // backItems
-            // 
-            this.backItems.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.backItems.Location = new System.Drawing.Point(853, 562);
-            this.backItems.Name = "backItems";
-            this.backItems.Size = new System.Drawing.Size(143, 35);
-            this.backItems.TabIndex = 51;
-            this.backItems.Text = "Back (Items)";
-            this.backItems.UseVisualStyleBackColor = true;
-            this.backItems.Click += new System.EventHandler(this.backItems_Click);
             // 
             // Dashboard
             // 
