@@ -119,13 +119,14 @@
             // 
             // Exitbtn
             // 
+            this.Exitbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.Exitbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exitbtn.Location = new System.Drawing.Point(346, 270);
             this.Exitbtn.Name = "Exitbtn";
             this.Exitbtn.Size = new System.Drawing.Size(130, 38);
             this.Exitbtn.TabIndex = 7;
             this.Exitbtn.Text = " Exit";
-            this.Exitbtn.UseVisualStyleBackColor = true;
+            this.Exitbtn.UseVisualStyleBackColor = false;
             this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
             // groupPmb8DataSet
