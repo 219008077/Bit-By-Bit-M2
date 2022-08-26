@@ -279,7 +279,8 @@ namespace Project
             var item = itemsDataGrid.SelectedRows[0].Cells[1].Value.ToString();
             var qua = itemsDataGrid.SelectedRows[0].Cells[2].Value.ToString();
             var TicketID = itemsDataGrid.SelectedRows[0].Cells[3].Value.ToString();
-            if (int.TryParse(itemID, out id) && int.TryParse(TicketID, out tId) && decimal.TryParse(AddServicePrice.SelectedValue.ToString(), out decimal amount))
+            decimal amount;
+            if (int.TryParse(itemID, out id) && int.TryParse(TicketID, out tId) && decimal.TryParse(AddServicePrice.SelectedValue.ToString(), out amount))
             {
                 try
                 {

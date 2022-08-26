@@ -35,7 +35,7 @@ namespace Project
                 {
                     int qua = int.Parse(item.Quantity);
                     total += service.Price * qua;
-                    var display = $"{service.ServiceName} - {(service.Price * qua):C} ({service.Price:C} x {item.Quantity})";
+                    var display = $"{service.ServiceName} - {(service.Price * qua).ToString("C")} ({service.Price:C} x {item.Quantity})";
                     Items.Items.Add(display);
                 }
             }
